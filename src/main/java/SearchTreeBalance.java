@@ -180,7 +180,7 @@ public class SearchTreeBalance {
             return isBalanced(root);
         }
 
-        private boolean isBalanced(Node node) {
+        private boolean isBalanced(Node node) {//Оценка метода: O(n), для несбалансированных деревьев проверка может завершиться быстрее, как только будет обнаружена разница больше чем на единицу
             if (node == null) {
                 return true;
             }
